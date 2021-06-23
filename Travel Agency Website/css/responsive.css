@@ -1,0 +1,296 @@
+@media only screen and (max-width: 882px){
+    h2 {
+        font-size: 2.1em;
+    }
+    span {
+        font-size: 1.2em;
+    }
+    .section-text p {
+        font-size: 1.1em;
+        margin-top: 0px;
+    }
+
+
+    header, .sticky {
+        padding: 18px 0 17px 75px;
+    }
+    header #title, .sticky #title {
+        font-size: 2.2em;
+    }
+    header .nav-list {
+        display: none;
+    }
+
+    header .nav-list li a, .sticky .nav-list li a {
+        color: black;
+    }
+    header .nav-list li:hover{
+        border-bottom: 0;
+    }
+    header .nav-list li a:hover{
+        color: rgb(42, 168, 168);
+    }
+    header .nav-list.navlist-clicked {
+        background-color:white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 92px;
+        right: 0;
+        width: 30%;
+        height: calc(100vh - 92px);
+        box-shadow: -1px 35px 33px grey;
+        padding-right: 10px;
+    }
+    header .nav-list.navlist-clicked li {
+        padding: 55px 38px;
+        border-bottom:rgb(42, 168, 168) 3px solid;
+    }
+    header .menu-bars {
+        background: url(../img/svg/menu-white.svg) no-repeat;
+        height: 27px;
+        width: 27px;
+        background-size: cover;
+        cursor: pointer;
+        position: absolute;
+        right: 40px;
+    }
+    .menu-bars.navlist-clicked {
+        background: url(../img/svg/close-white.svg) no-repeat;
+    }
+    
+    .sticky .menu-bars {
+        background: url(../img/svg/menu-cyan.svg);
+        height: 27px;
+        width: 27px;
+        background-size: cover;
+        cursor: pointer;
+    }
+    .sticky .menu-bars.navlist-clicked {
+        background: url(../img/svg/close-cyan.svg);
+    }
+    
+    
+    .bg {
+        height: 90vh;
+    }
+    .bg .bg-content {
+        max-width: 650px;
+    }
+    .bg h2 {
+        font-size: 2.8em;
+    }
+    .bg p {
+        font-size: .9em;
+    }
+    
+    
+    .about {
+        padding: 70px 50px 0 50px;
+    }
+    .about .about-sections {
+        width: 100%;        
+    }
+    
+    
+    .services {
+        padding-top: 70px;
+    }
+    .services .services-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services .box {
+        width: 55%;
+    }
+    
+    
+    .reviews {
+        padding: 70px 30px 30px 30px;
+    }
+    .reviews .review-content {
+        margin: 10px 0px;
+    }
+    .reviews .review-box {
+        flex-direction: row;
+        width: 100%;
+        padding: 25px;
+    }
+    .reviews .review-box:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+    .reviews .review-box p {
+        padding: 0 15px;
+        font-size: 2.2vw;
+    }
+    .reviews .review-box .img-box {
+        width: 25%;
+        margin: 0 10px;
+    }
+    
+    
+    .contact {
+        padding: 35px;
+    }
+    .contact .contact-inputs {
+        margin-top: 45px;
+        width: 483px;
+    }
+    
+    
+    footer {
+        padding: 10px 30px;
+    }
+    footer .footer-infos a {
+        font-size: 1.2em;
+    }
+    footer .footer-infos span,
+    footer .copyright-text div {
+        font-size: 1em;
+    }
+    footer .copyright-text span {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 511px) {
+    
+    h2 {
+        font-size: 1.6em;
+    }
+    span {
+        font-size: 1.1em;
+    }
+    .section-text p {
+        font-size: .8em;
+        margin-top: 0px;
+    }
+    
+    
+    header .menu-bars {
+        background: url(../img/svg/menu-white.svg) no-repeat;
+        height: 22px;
+        width: 22px;
+        background-size: cover;
+        cursor: pointer;
+        position: absolute;
+        right: 40px;
+    }
+    header, .sticky {
+        padding: 12px 0 12px 40px;
+    }
+    header #title, .sticky #title {
+        font-size: 1.8em;
+    }
+    header .nav-list.navlist-clicked {
+        top: 67px;
+        width: 20%;
+        height: calc(100vh - 67px);
+        padding-right: 15px;
+    }
+    header .nav-list.navlist-clicked li, .sticky .nav-list.navlist-clicked li {
+        padding: 40px 5px;
+        border-width: 2px;
+    }
+    header .nav-list li a, .sticky .nav-list li a{
+        font-size: 1.1em;
+    }
+    
+
+    .bg {
+        height: 80vh;
+    }
+    .bg .bg-content {
+        max-width: 350px;
+    }
+    .bg h2 {
+        font-size: 1.8em;
+    }
+    .bg p {
+        font-size: .6em;
+    }
+    .btn, .btn:visited {
+        font-size: .6em;
+        padding: 6px 10px;
+        margin-top: 7px;
+    }
+
+    
+    .about {
+        padding: 70px 0 0 0;
+    }
+    .about .about-sections {
+        width: 85%;
+    }
+
+
+    .services .box {
+        width: 55%;
+        margin: 7px;
+    }
+    .services .box span {
+        font-size: 11px;
+        padding: 2px;
+    }
+
+
+    .reviews {
+        padding: 70px 0 0 0;
+        margin-top: 20px;
+    }
+    .reviews .review-content {
+        margin: 0;
+    }
+    .reviews .review-box {
+        padding: 15px;
+    }
+    .reviews .review-box p {
+        padding: 0;
+        font-size: 2vw;
+    }
+    .reviews .review-box .img-box {
+        width: 20%;
+        margin: 0 10px;
+    }
+    .reviews h3 {
+        font-size: 1.9vw;
+    }
+
+
+    .contact {
+        padding: 30px 0;
+    }
+    .contact .contact-inputs {
+        margin-top: 18px;
+        padding: 25px 25px;
+        max-width: 75%;
+    }
+    .contact .contact-inputs h3 {
+        font-size: 1em;
+        margin-bottom: 7px;
+    }
+    .contact .contact-inputs input,
+    .contact .contact-inputs textarea{
+        padding: 6px;
+        font-size: .8em;
+        margin: 5px 0;
+    }
+
+    .contact .contact-inputs .btn {
+        width: 75px;
+        font-size: .9em;
+        margin: 0;
+    }
+
+
+    footer {
+        padding: 10px 15px;
+    }
+    footer .footer-infos a,
+    footer .footer-infos span,
+    footer .copyright-text div {
+        font-size: .8em;
+    }
+}
