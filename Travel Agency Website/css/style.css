@@ -7,7 +7,7 @@
     font-family: "Nunito", sans-serif;
 }
 
-body {
+html {
     scroll-behavior: smooth;
 }
 
@@ -16,7 +16,6 @@ h2 {
     font-weight: 100;
     text-align: center;
 }
-
 .section-text p {
     font-size: 1.2em;
     margin-top: 15px;
@@ -42,29 +41,24 @@ header {
     padding: 15px 30px 15px 100px;
     transition: 1s;
 }
-
 header #title {
     text-decoration: none;
     color: white;
     font-size: 3em;
 }
-
 header .nav-list {
     display: flex;
 }
-
 header .nav-list li {
     list-style: none;
     margin-left: 25px;
     padding: 0 4px;
 }
-
 header .nav-list li a {
     text-decoration: none;
     color: white;
     font-size: 1.2em;
 }
-
 header .nav-list li:hover {
     border-bottom: 4px solid rgb(42, 168, 168);
 }
@@ -75,43 +69,36 @@ header .nav-list li:hover {
     align-items: center;
     box-shadow: 0 0 10px 1px gray;
 }
-
 .sticky .nav-list li a {
     color: rgb(42, 168, 168);
 }
-
 .sticky #title {
     color: rgb(42, 168, 168);
     font-size: 2em;
 }
 
+
 .bg {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    width: 100%;
     background: url(../img/bg.jpg) no-repeat;
     background-size: cover;
     transition: 1s;
 }
-
 .bg .bg-content {
     text-align: center;
     max-width: 900px;
 }
-
 .bg h2 {
     color: white;
     font-size: 5em;
 }
-
 .bg p {
     color: white;
 }
-
 .btn, .btn:visited {
     color: white;
     text-decoration: none;
@@ -127,41 +114,38 @@ header .nav-list li:hover {
     letter-spacing: 4px;
 }
 
+
 .about {
-    padding: 100px 0px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     transition: 1s;
 }
-
 .about .about-sections {
     width: 80%;
 }
-
 .about .section-text p {
-    text-align: justify;
+    text-align: center;
     line-height: 1.6em;
 }
+
 
 .services {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    padding-top: 100px;
     transition: 1s;
 }
-
 .services h2 {
     text-align: center;
 }
-
 .services .services-content {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
-
 .services .box {
     position: relative;
     width: 25%;
@@ -171,11 +155,9 @@ header .nav-list li:hover {
     border-radius: 40px;
     box-shadow: 0 0 8px 1px gray;
 }
-
 .services .box .img-box {
     width: 100%;
 }
-
 .services .box span {
     position: absolute;
     bottom: 0;
@@ -186,7 +168,6 @@ header .nav-list li:hover {
     border-bottom-left-radius: 33px;
     border-bottom-right-radius: 33px;
 }
-
 .services .box .img-box img {
     height: 100%;
     width: 100%;
@@ -198,25 +179,21 @@ header .nav-list li:hover {
 .reviews {
     background: url(../img/review-bg.jpg) no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100%;
     padding: 100px 0;
     margin-top: 50px;
     transition: 1s;
 }
-
 .reviews .section-text h2 {
     text-align: center;
     color: white;
 }
-
 .reviews .section-text p {
     color: white;
 }
-
 .reviews .review-content {
     display: flex;
     flex-direction: row;
@@ -224,7 +201,6 @@ header .nav-list li:hover {
     justify-content: space-around;
     margin-top: 30px;
 }
-
 .reviews .review-box {
     display: flex;
     flex-direction: column;
@@ -249,14 +225,13 @@ header .nav-list li:hover {
 .reviews .review-box .img-box {
     width: 30%;
 }
-
 .reviews .review-box .img-box img {
     width: 100%;
     border-radius: 50%;
 }
 
+
 .contact {
-    /* background: url(../img/contact-bg.jpg); */
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -264,7 +239,6 @@ header .nav-list li:hover {
     transition: 1s;
     padding: 100px;
 }
-
 .contact .contact-inputs {
     margin-top: 66px;
     text-align: left;
@@ -272,12 +246,10 @@ header .nav-list li:hover {
     padding: 75px 50px;
     width: 500px;
 }
-
 .contact .contact-inputs h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
-
 .contact .contact-inputs input,
 .contact .contact-inputs textarea{
     padding: 10px;
@@ -286,12 +258,12 @@ header .nav-list li:hover {
     width: 100%;
     resize: none;
 }
-
 .contact .contact-inputs .btn {
     border: 0;
     width: 110px;
     cursor: pointer;
 }
+
 
 footer {
     display: flex;
@@ -302,25 +274,21 @@ footer {
     padding: 10px 90px;
     transition: 1s;
 }
- 
 footer .footer-infos a {
     padding: 0 5px;
     font-size: 1.2em;
     color: white;
 }
-
 footer .footer-infos span {
     color: white;
     font-weight: 400;
     font-size: 1.2em;
 }
-
 footer .copyright-text div {
     color: white;
     font-size: 1.2em;
     font-weight: 400;
 }
-
 footer .copyright-text a, footer .copyright-text a:visited {
     text-decoration: none;
     color: navy;

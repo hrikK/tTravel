@@ -20,7 +20,6 @@
     header .nav-list {
         display: none;
     }
-
     header .nav-list li a, .sticky .nav-list li a {
         color: black;
     }
@@ -43,6 +42,16 @@
         height: calc(100vh - 92px);
         box-shadow: -1px 35px 33px grey;
         padding-right: 25px;
+        animation-name: render;
+        animation-duration: .5s;
+    }
+    @keyframes render {
+        from {
+            height: 0%;
+        }
+        to {
+            height: calc(100vh - 92px);
+        }
     }
     header .nav-list.navlist-clicked li {
         text-align: center;
